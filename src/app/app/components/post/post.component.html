@@ -1,18 +1,5 @@
-<div>
-  <div>
-    <h1>{{user.name}}</h1>
-  </div>
-  <div *ngFor="let p of user.posts">
-    <h3>{{p.title}}</h3>
-    <p>{{p.body}}</p>
-    <div *ngFor="let c of p.comments">
-      <ul>
-        <li>
-          <h5>{{c.name}}</h5>
-          <p>{{c.body}}</p>
-        </li>
-      </ul>
-    </div>
-  </div>
+<div *ngFor="let p of post">
+  <h1>{{p.title}}</h1>
+  <p>{{p.body}}</p>
+  <hr/>
 </div>
-<hr>
